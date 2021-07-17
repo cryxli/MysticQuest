@@ -1,0 +1,38 @@
+\documentclass[paper=a5,fontsize=12pt]{scrreprt}
+
+%% use sans-serif font
+\renewcommand{\familydefault}{\sfdefault}
+
+%% import graphics
+\usepackage[pdftex]{graphicx} 
+
+%% tables
+\usepackage{longtable}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Mystic Quest Compendium},
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+\include{MQ-01-title}
+%% \include{MQ-02-intro}
+\include{MQ-03-history}
+\include{MQ-04-story}
+\include{MQ-05-characters}
+\include{MQ-06-effects}
+\include{MQ-07-items}
+\include{MQ-08-weapons}
+\include{MQ-09-armors}
+\include{MQ-10-spells}
+\include{MQ-11-monsters}
+\include{MQ-12-world}
+\include{MQ-13-credits}
+
+\end{document}
