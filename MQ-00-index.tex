@@ -3,11 +3,19 @@
 %% use sans-serif font
 \renewcommand{\familydefault}{\sfdefault}
 
+%% images in text flow
+\newcommand{\mediaicon}[1]{\begingroup
+	\setbox0=\hbox{\includegraphics[height=1cm,keepaspectratio]{#1}}%
+	\parbox{\wd0}{\box0}\endgroup}
+\newcommand{\effecticon}[1]{\includegraphics[height=1em,keepaspectratio]{#1}}
+\newcommand{\portraitimg}[1]{\includegraphics[height=2cm,keepaspectratio]{#1}}
+
 %% import graphics
-\usepackage[pdftex]{graphicx} 
+\usepackage[pdftex]{graphicx}
 
 %% tables
-\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{ltablex}
 
 \usepackage{hyperref}
 \hypersetup{
